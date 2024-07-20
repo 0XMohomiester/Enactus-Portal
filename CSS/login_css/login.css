@@ -1,0 +1,188 @@
+* {
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    min-height: 100vh;
+    background: url("../imgs/background.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+.textH{
+  color: #FEBF0F;
+  font-size: 30px;
+}
+.imgH{
+  width: 40px;
+}
+.w-90{
+  width: 90%;
+}
+
+.w-45{
+  width: 45%;
+}
+
+.w-30{
+  width: 30%;
+}
+
+  .color-enactus{
+    color: rgb(252, 168, 12);
+}
+  
+  .wrapper {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    color: #fff;
+    border-radius: 12px;
+    padding: 30px 40px;
+  }
+  
+  .wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+  
+  .wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+  }
+  
+  .input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.332);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+  }
+  
+  .input-box input::placeholder {
+    color: #f4e32a;
+  }
+  
+  .input-box i {
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+  }
+
+#incorrect{
+  color: rgb(255, 49, 49);
+  background-color: rgb(30, 30, 30);
+  border-radius: 25px;
+}
+.wrapper .btn {
+    width: 50%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #dfae0c;
+    border: 3px solid #dfae0c;
+    display: block;
+    margin: 0 auto; 
+  }
+  
+  
+  
+ 
+
+.quote {
+    text-align: center;
+    position: absolute;
+    top: 70px;
+   
+
+    
+  }
+  
+  .quote h2 {
+    font-size: 38px;
+    color: #f4e32a;
+  }
+  .header {
+    display: flex;
+    align-items: flex-start;
+    width: 30%;
+    
+  }
+  
+  .logo {
+    margin-right: 0.1px;
+  }
+  
+  .logo img {
+    width: 145px; 
+  }
+
+  .logo-text h2 {
+    color: #fff;
+    font-size: 10px;
+    position: absolute;
+    top: 80px;
+    left: 40px;
+  }
+  @media (max-width: 767px) {
+
+    .textH{    
+      font-size: 150%;
+    }
+    .imgH{
+      width: 25px;
+    }
+
+    .wrapper {
+    width: 90%;
+    max-width: 400px;
+    }
+    .wrapper h1 {
+      font-size: 24px;
+    }
+    
+    .input-box input {
+      font-size: 14px;
+      padding: 15px 35px 15px 15px;
+    }
+    
+    .input-box i {
+      font-size: 16px;
+    }
+    
+    .remember-forgot {
+      font-size: 12px;
+    }
+    
+    .wrapper .btn {
+      width: 100%;
+    }
+    
+    .quote h2 {
+      font-size: 28px;
+    }
+    
+    .logo img {
+      width: 110px;
+    }
+    
+    .logo-text h2 {
+      font-size: 8px;
+      top: 60px;
+      left: 30px;
+    }
+  }
