@@ -92,7 +92,7 @@ if(isset($_COOKIE['session']) && is_string($_COOKIE['session']) && !empty($_COOK
                     if($role === "admin_hr"){
                         echo '<a href="admininfo.php" class="navlink7">admin</a><br>';
                     }?></li>
-                <li class="logout"><a href="logout.php" class="navlink6">logout</a></li>      
+                <li class="logout"><a href="logout.php" class="navlink6" style="color:#FEBF0F;"><i class="bi bi-box-arrow-left" style="margin-right: 5px"></i>logout</a></li>      
             </ul>
         </div>
     </div>

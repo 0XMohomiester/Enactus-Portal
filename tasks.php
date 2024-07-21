@@ -114,7 +114,7 @@ else{
                     if($role === "admin_hr"){
                         echo '<a href="admininfo.php" class="navlink7">admin</a><br>';
                     }?></li>
-                <li class="logout"><a href="logout.php" class="navlink6">logout</a></li>      
+                <li class="logout"><a href="logout.php" class="navlink6" style="color:#FEBF0F;"><i class="bi bi-box-arrow-left" style="margin-right: 5px"></i>logout</a></li>      
             </ul>
         </div>
     </div>
@@ -184,7 +184,7 @@ else{
                     $firstName_cur = $nameParts_cur[0] . " " . end($nameParts_cur);
                     $user_avatar_cur = $row_cur['Avatar'];
                     $null_cur = false;
-                    if($user_avatar_cur == NULL || !(file_exists(__DIR__ . '/images/' . $user_avatar))){
+                    if($user_avatar_cur == NULL || !(file_exists(__DIR__ . '/images/' . $user_avatar_cur))){
                         $null_cur = true;
                         $user_avatar_cur = $DEFAULT_IMG;
                     }

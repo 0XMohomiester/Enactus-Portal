@@ -144,7 +144,7 @@ if(isset($_COOKIE['session']) && is_string($_COOKIE['session']) && !empty($_COOK
                 if($role === "admin_hr"){
                     echo '<a href="admininfo.php" class="navlink7">admin</a><br>';
                 }?></li>
-            <li class="logout"><a href="logout.php" class="navlink6">logout</a></li>      
+            <li class="logout"><a href="logout.php" class="navlink6" style="color:#FEBF0F;"><i class="bi bi-box-arrow-left" style="margin-right: 5px"></i>logout</a></li>      
         </ul>
     </div>
 </div>
@@ -255,12 +255,13 @@ if(isset($_COOKIE['session']) && is_string($_COOKIE['session']) && !empty($_COOK
                             }else{
                                 echo "<p>No Announcements Yet</p>";
                             }
-                        ?>    
+                        ?>
+                        
                     </div>
                 </div>
             </div>
             <div class="row video">
-                <video src="videos/Eco_Rice.mp4" controls autoplay muted></video>
+                <iframe src="https://drive.google.com/file/d/179m6Gy8LLuRIohgrqNr8vKrUWJJj3wzS/preview" class="frame"  allow="autoplay fullscreen"></iframe>
             </div>
         </div>
     </div>

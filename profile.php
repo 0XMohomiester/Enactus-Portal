@@ -34,14 +34,13 @@ if(isset($_COOKIE['session']) && !empty($_COOKIE['session']) && is_string($_COOK
             include "config.php";
             global $conn;
             // Array ( [name] => 1.png [full_path] => 1.png [type] => image/png [tmp_name] => /private/var/folders/qp/phsq7g5s167d7rs5xswpxql00000gn/T/phpZlNizt [error] => 0 [size] => 64369 )
-            $max_size = 2 * 1024 * 1024;
             $img = $_FILES['myimg'];
             $img_name = $_FILES['myimg']['name'];
             $size_of_img =  $_FILES['myimg']['size'];
             $img_extension = pathinfo($img_name, PATHINFO_EXTENSION);
             $content_type_of_img = $_FILES['myimg']['type'];
             $tmp_path = $_FILES['myimg']['tmp_name'];
-            if($size_of_img <= $max_size){
+            if($size_of_img <  2 * 1024 * 1024){
                 if(strtolower($img_extension) === "png" || strtolower($img_extension) === "jpeg" || strtolower($img_extension) === "jpg"){
                     if($content_type_of_img === "image/png" || $content_type_of_img === "image/jpeg"){
                         if(mime_content_type($tmp_path) === "image/png" || mime_content_type($tmp_path) === "image/jpeg"){
@@ -175,7 +174,7 @@ else{
             </div>
         </div>
     </div>
-    <div class="back">
+    <div class="back yellow">
         <a href="dashboard.php"><i class="bi bi-arrow-left-short"></i></i></a>
     </div>
     <div class="logout">

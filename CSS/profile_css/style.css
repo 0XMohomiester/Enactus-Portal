@@ -64,6 +64,7 @@ input[type="file"] {
 
 .info_right{
     border-left: 1px solid #FEBF0F;
+    padding-left: 25px;
 }
 
 .back{

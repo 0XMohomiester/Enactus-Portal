@@ -165,7 +165,7 @@ if(isset($_COOKIE['session']) && is_string($_COOKIE['session']) && !empty($_COOK
                 <li><a href="announcements.php" class="navlink4">Announcements</a></li>
                 <li><a href="report.php" class="navlink5">Report</a></li>
                 <li><a href="#" class="navlink7">admin</a></li>
-                <li class="logout"><a href="logout.php" class="navlink6">logout</a></li>      
+                <li class="logout"><a href="logout.php" class="navlink6" style="color:#FEBF0F;"><i class="bi bi-box-arrow-left" style="margin-right: 5px"></i>logout</a></li>      
             </ul>
         </div>
     </div>
@@ -225,7 +225,7 @@ if(isset($_COOKIE['session']) && is_string($_COOKIE['session']) && !empty($_COOK
                             <p>Warnings: $warnings</p>
                             <p>Tasks: $tasks</p>
                         </div>
-                            <div style='border-left: 1px solid white;' class='col'>
+                            <div style='border-left: 1px solid white; padding-left: 30px;' class='col'>
                             <p>Department: $Pdid</p>
                             <p>Email: $Pemail</p>
                             <p>Level: $Plevel</p>

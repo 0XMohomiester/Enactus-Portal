@@ -55,7 +55,7 @@ html{
     transform: scaleX(0.3);
 }
 .navlinks li .navlink6:hover:after{
-    transform: scaleX(0.3);
+    transform: scaleX(0.4);
 }
 .navlinks li .navlink7:hover:after{
     transform: scaleX(0.3);
@@ -162,6 +162,11 @@ html{
     margin-bottom: 30px;
 }
 
+.frame{
+    width: 100%;
+    height: 480px;
+}
+
 @media only screen and (max-height: 900px){
     .navlinks .logout{
         margin-top: 330px;
@@ -215,6 +220,9 @@ html{
     .dailycont{
         font-size: 120%;
     }
+    .frame{
+        height: 300px;
+    }
 }
 
 @media only screen and (max-width: 490px){
@@ -243,6 +251,9 @@ html{
     .main{
         margin-left: 5%;
         margin-right: 5%;
+    }
+    .frame{
+        height: auto;
     }
     
 }

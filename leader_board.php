@@ -101,7 +101,7 @@ if(isset($_COOKIE['session']) && is_string($_COOKIE['session']) &&!empty($_COOKI
                     if($role === "admin_hr"){
                         echo '<a href="admininfo.php" class="navlink7">admin</a><br>';
                     }?></li>
-                <li class="logout"><a href="logout.php" class="navlink6">logout</a></li>      
+                <li class="logout"><a href="logout.php" class="navlink6" style="color:#FEBF0F;"><i class="bi bi-box-arrow-left" style="margin-right: 5px"></i>logout</a></li>      
             </ul>
         </div>
     </div>
@@ -176,8 +176,8 @@ if(isset($_COOKIE['session']) && is_string($_COOKIE['session']) &&!empty($_COOKI
                                                 if(mysqli_num_rows($result_lb) == 1){
                                                     $row_user = mysqli_fetch_assoc($result_lb);
                                                     $full_name_lb = $row_user['Full_Name'];
-                                                    $nameParts_lb = explode(" ", $full_name_lb);
-                                                    $firstName_lb = $nameParts_lb[0] . " " . end($nameParts_lb);
+                                                    // $nameParts_lb = explode(" ", $full_name_lb);
+                                                    // $firstName_lb = $nameParts_lb[0] . " " . end($nameParts_lb);
                                                     $user_avatar_lb = $row_user['Avatar'];
                                                     $null_lb = false;
                                                     if($user_avatar_lb == NULL || !(file_exists(__DIR__ . '/images/' . $user_avatar_lb))){
@@ -193,7 +193,7 @@ if(isset($_COOKIE['session']) && is_string($_COOKIE['session']) &&!empty($_COOKI
                                                 }else{
                                                     echo "<td><img style='border-radius: 50%; border: solid 1px #FEBF0F; width: 40px; height: 40px;' src='images/$user_avatar_lb' alt='profile'></td>";
                                                 }                        
-                                                echo "<td>" . htmlspecialchars($firstName_lb) ."</td>" . "<td>" . htmlspecialchars($formatted_number)  . "</td>"
+                                                echo "<td>" . htmlspecialchars($full_name_lb) ."</td>" . "<td>" . htmlspecialchars($formatted_number)  . "</td>"
                                                 . "</tr>";
                                                 $rank_lb++;
                                                 if($rank_lb == 6){
