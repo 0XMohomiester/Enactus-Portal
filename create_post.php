@@ -76,7 +76,7 @@ else{
     <div class="container-md main_container" style="margin-top: 100px;">
         <div class="row justify-content-center maincreat">
             <div class="col-lg-8 text-center maintext">
-                <h1 class="title">Creat a Post</h1>
+                <h1 class="title">Create a Post</h1>
             </div>
         </div>  
         <div class="row justify-content-center maincreat">
@@ -87,7 +87,7 @@ else{
                     <label for="content">Content:</label><br> 
                     <textarea class="content" id="message" name="content" required></textarea><br>
                     <div class="text-end">
-                        <button class="send" type="submit" name="submit">Creat</button>
+                        <button class="send" type="submit" name="submit">Create</button>
                     </div>
                 </form>
             </div>
